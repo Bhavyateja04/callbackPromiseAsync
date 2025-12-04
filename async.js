@@ -24,6 +24,13 @@ const myfun=async()=>{
   console.log("456")
 };
 myfun();
+const myfun1=async()=>{
+  console.log("123")
+  const result=await getUserDetails("123");
+  console.log(result);
+  console.log("456")
+};
+myfun1();
 getUserDetails("1220").
   then((result) => {
     return getUserSubjectDetails(result.userroll);  
